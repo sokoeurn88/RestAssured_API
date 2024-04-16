@@ -2,22 +2,53 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-15T11:10:17 CDT" name="Default suite" finished-at="2024-04-15T11:10:18 CDT" duration-ms="1368">
+  <suite started-at="2024-04-16T08:22:43 CDT" name="Default suite" finished-at="2024-04-16T08:22:46 CDT" duration-ms="2321">
     <groups>
     </groups>
-    <test started-at="2024-04-15T11:10:17 CDT" name="Default test" finished-at="2024-04-15T11:10:18 CDT" duration-ms="1368">
-      <class name="day04.Parsing_Json_Response_Data">
-        <test-method signature="test_Json_Response3()[pri:0, instance:day04.Parsing_Json_Response_Data@dd8ba08]" started-at="2024-04-15T11:10:17 CDT" name="test_Json_Response3" finished-at="2024-04-15T11:10:18 CDT" duration-ms="1326" status="FAIL">
-          <exception class="org.json.JSONException">
+    <test started-at="2024-04-16T08:22:43 CDT" name="Default test" finished-at="2024-04-16T08:22:46 CDT" duration-ms="2321">
+      <class name="day05.Parsing_XML_Response">
+        <test-method signature="test_XML_Response()[pri:0, instance:day05.Parsing_XML_Response@222545dc]" started-at="2024-04-16T08:22:43 CDT" name="test_XML_Response" finished-at="2024-04-16T08:22:46 CDT" duration-ms="2267" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[A JSONObject text must begin with '{' at 1 [character 2 line 1]]]>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <404>.
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
-at org.json.JSONTokener.syntaxError(JSONTokener.java:503)
-at org.json.JSONObject.<init>(JSONObject.java:213)
-at org.json.JSONObject.<init>(JSONObject.java:430)
-at day04.Parsing_Json_Response_Data.test_Json_Response3(Parsing_Json_Response_Data.java:60)
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <404>.
+
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+at day05.Parsing_XML_Response.test_XML_Response(Parsing_XML_Response.java:19)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -46,11 +77,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.json.JSONException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_Json_Response3 -->
-      </class> <!-- day04.Parsing_Json_Response_Data -->
+        </test-method> <!-- test_XML_Response -->
+      </class> <!-- day05.Parsing_XML_Response -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
